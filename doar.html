@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário</title>
+
+	<style>
+		.flexbox-container{
+			width: 580px;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #000;
+		}
+
+		.linha{
+			display: flex;
+			gap: 20px;
+			margin-bottom: 15px;
+		}
+
+		.coluna{
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+		}
+
+		label{
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		input{
+			padding: 5px;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0px;
+			background-color: #CFE0BC;
+		}
+	</style>
+</head>
+
+<body>
+
+<form>
+	<div class="flexbox-container">
+
+		<div class="linha">
+			<div class="coluna">
+				<label>Nome</label>
+				<input type="text">
+			</div>
+			<div class="coluna">
+				<label>Sobrenome</label>
+				<input type="text">
+			</div>
+		</div>
+
+		<div class="linha">
+			<div class="coluna">
+				<label>Email</label>
+				<input type="email">
+			</div>
+			<div class="coluna">
+				<label>WhatsApp</label>
+				<input type="text">
+			</div>
+		</div>
+
+		<div class="linha">
+			<div class="coluna">
+				<label>Cidade</label>
+				<input type="text">
+			</div>
+			<div class="coluna">
+				<label>Estado</label>
+				<input type="text">
+			</div>
+			<div class="coluna">
+				<label>CPF</label>
+				<input type="text">
+			</div>
+		</div>
+
+		
+		<div class="linha">
+			<div class="coluna">
+				<label>Forma de pagamento</label>
+
+				<label><input type="radio" name="pagamento"> Débito</label>
+				<label><input type="radio" name="pagamento"> Crédito</label>
+				<label><input type="radio" name="pagamento"> Pix</label>
+			</div>
+		</div>
+
+	
+		<div class="linha">
+			<input type="submit" value="Enviar">
+		</div>
+
+	</div>
+	<style>
+.rodape {
+    width: 100%;
+}
+
+.rodape img {
+    width: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+	</style>
+	<div class="rodape">
+    <img src="imagens/folha.webp" alt="Museu Moderno">
+</div>
+</form>
+
+</body>
+</html>
